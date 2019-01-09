@@ -1,2 +1,23 @@
-hello
-how are you
+#mysql -u root -p
+devops
+
+#show database; (To check what are database are avilable)
+
+#create database Nov18_db; (Database name)
+
+#use Nov18_db; (To our connect db)
+
+#show tables; (List all table in that database)
+
+#CREATE TABLE `customer_information` (
+	`cust_id` INT(11) NOT NULL AUTO_INCREMENT,
+	`cust_name` VARCHAR(150) NULL DEFAULT NULL,
+	`cust_email` VARCHAR(150) NULL DEFAULT NULL,
+	`cust_pwd` VARCHAR(150) NULL DEFAULT NULL,
+	`cust_staysignedin` VARCHAR(150) NULL DEFAULT NULL,
+	`cust_gender` VARCHAR(150) NULL DEFAULT NULL,
+	`cust_mobilenumber` VARCHAR(150) NULL DEFAULT NULL,
+	PRIMARY KEY (`cust_id`)
+);
+
+#select * from customer_information;
